@@ -28,9 +28,9 @@ def prime_sieve(size):
 
     return primes
 
-def answer():
+def solution():
     primes = prime_sieve(900000)
     return primes[10000]
 
 if __name__ == "__main__":
-    print(answer())
+    print(solution())

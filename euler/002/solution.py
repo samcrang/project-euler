@@ -19,5 +19,8 @@ def answer(upper_bound):
         else:
             return acc
 
+def solution():
+    return answer(4000000)
+
 if __name__ == "__main__":
-    print(answer(4000000))
+    print(solution())

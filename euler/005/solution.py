@@ -16,5 +16,8 @@ def answer(upper_bound):
 
     return result
 
+def solution():
+    return answer(20)
+
 if __name__ == "__main__":
     print(answer(20))

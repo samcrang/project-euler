@@ -15,5 +15,8 @@ def answer(base_10_digits):
 
     return best_candidate
 
+def solution():
+    return answer(3)
+
 if __name__ == "__main__":
-    print(answer(3))
+    print(solution())

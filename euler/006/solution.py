@@ -18,5 +18,8 @@ def sum(n):
 def answer(n):
     return int(sum(n)**2 - sum_of_squares(n))
 
+def solution():
+    return answer(100)
+
 if __name__ == "__main__":
-    print(answer(100))
+    print(solution())

@@ -30,7 +30,14 @@ def prime_sieve(size):
 
 
 def answer(number):
-    return sum(prime_sieve(number))
+    primes = prime_sieve(int(math.sqrt(number)))
+
+    for x in reversed(primes):
+        if number % x == 0:
+            return x
+
+def solution():
+    return answer(600851475143)
 
 if __name__ == "__main__":
-    print(answer(2000000))
+    print(solution())

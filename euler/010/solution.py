@@ -28,13 +28,11 @@ def prime_sieve(size):
 
     return primes
 
-
 def answer(number):
-    primes = prime_sieve(int(math.sqrt(number)))
+    return sum(prime_sieve(number))
 
-    for x in reversed(primes):
-        if number % x == 0:
-            return x
+def solution():
+    return answer(2000000)
 
 if __name__ == "__main__":
-    print(answer(600851475143))
+    print(solution())

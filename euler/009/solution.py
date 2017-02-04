@@ -42,5 +42,8 @@ def answer(n):
             a = (x[0] * k, x[1] * k, x[2] * k)
             return a[0] * a[1] * a[2]
 
+def solution():
+    return answer(1000)
+
 if __name__ == "__main__":
-    print(answer(1000))
+    print(solution())

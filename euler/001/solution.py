@@ -10,5 +10,8 @@ def answer(upper_bound):
             acc = acc + x
     return acc
 
+def solution():
+    return answer(1000)
+
 if __name__ == "__main__":
-    print(answer(1000))
+    print(solution())
