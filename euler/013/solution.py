@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from functools import reduce
 
 def answer(n):
@@ -108,6 +106,3 @@ def solution():
         20849603980134001723930671666823555245252804609722,
         53503534226472524250874054075591789781264330331690,
     ])
-
-if __name__ == "__main__":
-    print(solution())

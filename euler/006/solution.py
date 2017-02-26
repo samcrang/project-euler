@@ -1,8 +1,5 @@
-#!/usr/bin/env python3
-
 """
 https://en.wikipedia.org/wiki/Square_pyramidal_number
-
 
 n(n + 1)(2n + 1) /6
 """
@@ -20,6 +17,3 @@ def answer(n):
 
 def solution():
     return answer(100)
-
-if __name__ == "__main__":
-    print(solution())

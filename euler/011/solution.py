@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from functools import reduce
 
 """
@@ -80,6 +78,3 @@ def solution():
     [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]]
 
     return answer(grid, 4)
-
-if __name__ == "__main__":
-    print(solution())

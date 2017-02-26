@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """
 https://en.wikipedia.org/wiki/Coprime_integers#Generating_all_coprime_pairs
 """
@@ -44,6 +42,3 @@ def answer(n):
 
 def solution():
     return answer(1000)
-
-if __name__ == "__main__":
-    print(solution())

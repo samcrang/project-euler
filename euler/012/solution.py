@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from collections import Counter
 from functools import reduce
 from ..helpers.prime_sieve import prime_sieve
@@ -43,6 +41,3 @@ def solution():
         if divisors > 500:
             return candidate
         candidate += 1
-
-if __name__ == "__main__":
-    print(solution())

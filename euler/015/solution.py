@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import math
 
 """
@@ -14,6 +12,3 @@ def answer(width, height):
 
 def solution():
     return answer(20, 20)
-
-if __name__ == "__main__":
-    print(solution())

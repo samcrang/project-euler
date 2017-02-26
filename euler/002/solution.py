@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 def fib():
     a, b = 1, 2
 
@@ -21,6 +19,3 @@ def answer(upper_bound):
 
 def solution():
     return answer(4000000)
-
-if __name__ == "__main__":
-    print(solution())

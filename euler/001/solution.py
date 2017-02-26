@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 def divides_evenly_by_3_or_5(number):
     return number % 3 == 0 or number % 5 == 0
 
@@ -12,6 +10,3 @@ def answer(upper_bound):
 
 def solution():
     return answer(1000)
-
-if __name__ == "__main__":
-    print(solution())

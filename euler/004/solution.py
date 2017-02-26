@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import math
 
 def is_palindrome(number):
@@ -17,6 +15,3 @@ def answer(base_10_digits):
 
 def solution():
     return answer(3)
-
-if __name__ == "__main__":
-    print(solution())

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from functools import reduce
 
 def answer(exponent):
@@ -7,6 +5,3 @@ def answer(exponent):
 
 def solution():
     return answer(1000)
-
-if __name__ == "__main__":
-    print(solution())

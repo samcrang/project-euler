@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 def gcd(a, b):
     if b == 0:
         return a
@@ -18,6 +16,3 @@ def answer(upper_bound):
 
 def solution():
     return answer(20)
-
-if __name__ == "__main__":
-    print(answer(20))

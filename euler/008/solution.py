@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import math
 
 def answer(num, length):
@@ -41,6 +39,3 @@ def solution():
 71636269561882670428252483600823257530420752963450"
 
     return answer(num, 13)
-
-if __name__ == "__main__":
-    print(solution())

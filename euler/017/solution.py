@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from functools import reduce
 
 digits = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
@@ -31,6 +29,3 @@ def in_words(n):
 
 def solution():
     return len(reduce(lambda x, y: x + in_words(y), range(1, 1001), "").replace(" ", "").replace("-", ""))
-
-if __name__ == "__main__":
-    print(solution())

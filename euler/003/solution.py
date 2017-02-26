@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import math
 from ..helpers.prime_sieve import prime_sieve
 
@@ -12,6 +10,3 @@ def answer(number):
 
 def solution():
     return answer(600851475143)
-
-if __name__ == "__main__":
-    print(solution())
