@@ -5,5 +5,12 @@ My solutions to [Project Euler](https://projecteuler.net/) problems. These solut
 ## Usage
 
 ```
-./euler.py 004
+$ ./euler.py 004
+```
+
+## Tests
+
+```
+$ python3 -m unittest discover -v
+$ python3 -m unittest discover -v -p 'test_004.py'
 ```

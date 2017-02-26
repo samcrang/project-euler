@@ -1,7 +1,7 @@
 from functools import reduce
 
 def answer(n):
-    return str(reduce(lambda x, y: x + y, n, 0))[:10]
+    return int(str(reduce(lambda x, y: x + y, n, 0))[:10])
 
 def solution():
     return answer([

@@ -1,23 +1,6 @@
 import math
 
-def answer(num, length):
-    best_candidate = 0
-
-    for x in range(len(num) - length + 1):
-        candidate = None
-        for y in num[x:x+length]:
-            if candidate == None:
-                candidate = int(y)
-            else:
-                candidate = candidate * int(y)
-
-        if candidate > best_candidate:
-            best_candidate = candidate
-
-    return best_candidate
-
-def solution():
-    num = "73167176531330624919225119674426574742355349194934\
+num = "73167176531330624919225119674426574742355349194934\
 96983520312774506326239578318016984801869478851843\
 85861560789112949495459501737958331952853208805511\
 12540698747158523863050715693290963295227443043557\
@@ -38,4 +21,21 @@ def solution():
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450"
 
-    return answer(num, 13)
+def answer(length):
+    best_candidate = 0
+
+    for x in range(len(num) - length + 1):
+        candidate = None
+        for y in num[x:x+length]:
+            if candidate == None:
+                candidate = int(y)
+            else:
+                candidate = candidate * int(y)
+
+        if candidate > best_candidate:
+            best_candidate = candidate
+
+    return best_candidate
+
+def solution():
+    return answer(13)
