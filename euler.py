@@ -4,5 +4,5 @@ import sys
 import importlib
 
 print(importlib.import_module(
-    "euler.%s.solution" % sys.argv[1]
+    "euler.solution_%s" % sys.argv[1]
 ).solution())

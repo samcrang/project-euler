@@ -1,6 +1,6 @@
 from collections import Counter
 from functools import reduce
-from ..helpers.prime_sieve import prime_sieve
+from .helpers.prime_sieve import prime_sieve
 
 primes = prime_sieve(9000)
 
