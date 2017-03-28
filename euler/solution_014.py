@@ -1,16 +1,27 @@
+memo = {}
+
 def collatz(n):
-    sequence = [] 
+    def _collatz(n):
+        sequence = []
 
-    while True:
-        sequence.append(int(n))
+        while True:
+            n = int(n)
+            if n in memo:
+                sequence += memo[n]
+                return sequence
 
-        if n == 1:
-            return sequence
+            sequence.append(n)
 
-        if n % 2 == 0:
-            n = n / 2
-        else:
-            n = 3 * n + 1
+            if n == 1:
+                return sequence
+
+            if n % 2 == 0:
+                n = n / 2
+            else:
+                n = 3 * n + 1
+
+    memo[n] = _collatz(n)
+    return memo[n]
 
 def answer(limit):
     best_candidate = (0, 0)
