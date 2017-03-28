@@ -10,17 +10,17 @@ class Vertex:
 
 class Graph:
     def __init__(self):
-        self.verticies = []
+        self.vertices = []
         self.edges = []
 
     def add_vertex(self, vertex):
-        self.verticies.append(vertex)
+        self.vertices.append(vertex)
 
     def add_edge(self, source, destination, weight):
         self.edges.append(Edge(source, destination, weight))
 
     def get_vertex(self, name):
-        for v in self.verticies:
+        for v in self.vertices:
             if v.name == name:
                 return v
 
@@ -31,13 +31,13 @@ def bellman_ford(graph, start, target):
     distance = {}
     predecessor = {}
 
-    for v in graph.verticies:
+    for v in graph.vertices:
         distance[v.name] = float("inf")
         predecessor[v.name] = None
 
     distance[start.name] = 0
 
-    for v in graph.verticies:
+    for v in graph.vertices:
         for e in graph.edges:
             if distance[e.source.name] + e.weight < distance[e.destination.name]:
                 distance[e.destination.name] = distance[e.source.name] + e.weight
